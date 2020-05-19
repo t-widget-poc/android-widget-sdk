@@ -21,6 +21,7 @@ public class WidgetClient {
 
             @Override
             public void onResponse(@NotNull Call call, @NotNull Response response) {
+                // 本来はResponseをList<Widget>に変換する処理をはさむ
                 callback.onSuccess(response);
             }
 
